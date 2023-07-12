@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            Cat fact
+        </mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <p>
+            {{ fact ? fact : 'loading...' }}
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="onGetNewFact()" [disabled]="loading" mat-raised-button color="primary">Get new</button>
+    </mat-card-actions>
+</mat-card>
